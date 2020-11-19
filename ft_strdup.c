@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/01 10:04:09 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:06:35 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:50:25 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strdup(const char *s1)
 	if (!pt_scopy)
 		return (0);
 	c = 0;
-	while (s1[c] != '\0')
+	while (s1[c])
 	{
 		pt_scopy[c] = s1[c];
 		c++;

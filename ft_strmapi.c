@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/08 14:46:08 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:08:56 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:56:15 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!it_s)
 		return (0);
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		it_s[i] = f(i, s[i]);
 		i++;

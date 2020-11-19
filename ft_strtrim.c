@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 12:59:05 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:10:53 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 13:04:55 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,23 +64,12 @@ char				*ft_strtrim(char const *s1, char const *set)
 	char			*cpy_s1;
 	unsigned int	start;
 	unsigned int	end;
-	unsigned int	n;
 
 	if (s1 && set)
 	{
 		start = find_start(s1, set);
 		end = find_end(s1, set, start);
-		cpy_s1 = (char *)malloc((end - start + 1) * sizeof(char));
-		if (cpy_s1 == NULL)
-			return (0);
-		n = 0;
-		while (start < end)
-		{
-			cpy_s1[n] = s1[start];
-			start++;
-			n++;
-		}
-		cpy_s1[n] = '\0';
+		cpy_s1 = ft_substr(s1, start, (end - start));
 		return (cpy_s1);
 	}
 	else

@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 15:42:44 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:08:18 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:55:48 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	if (dstsize > 0)
 	{
-		while ((src[i] != '\0') && (i < (dstsize - 1)))
+		while (src[i] && (i < (dstsize - 1)))
 		{
 			dst[i] = src[i];
 			i++;

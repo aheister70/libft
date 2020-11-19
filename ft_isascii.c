@@ -6,14 +6,11 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:41:59 by aheister      #+#    #+#                 */
-/*   Updated: 2020/10/29 17:25:05 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:30:31 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isascii(int c)
 {
-	if ((c >= 0) && (c <= 127))
-		return (1);
-	else
-		return (0);
+	return ((c >= 0) && (c <= 127));
 }

@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 19:11:49 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:09:44 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 13:07:18 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	cpy_s1 = (unsigned char *)s1;
 	cpy_s2 = (unsigned char *)s2;
 	i = 0;
-	while ((i < n) && (cpy_s1[i] != '\0' || cpy_s2[i] != '\0'))
+	while ((i < n) && (cpy_s1[i] || cpy_s2[i]))
 	{
 		if (cpy_s1[i] != cpy_s2[i])
 		{

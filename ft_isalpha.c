@@ -6,14 +6,11 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 15:54:35 by aheister      #+#    #+#                 */
-/*   Updated: 2020/10/29 17:23:17 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:30:11 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isalpha(int c)
 {
-	if (((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z')))
-		return (1);
-	else
-		return (0);
+	return (((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z')));
 }

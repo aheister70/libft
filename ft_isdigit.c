@@ -6,14 +6,11 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:44:47 by aheister      #+#    #+#                 */
-/*   Updated: 2020/10/29 17:48:27 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:30:45 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isdigit(int c)
 {
-	if ((c >= '0') && (c <= '9'))
-		return (1);
-	else
-		return (0);
+	return ((c >= '0') && (c <= '9'));
 }

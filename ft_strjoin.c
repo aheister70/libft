@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/02 09:23:05 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:07:03 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:54:58 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ char *join_s, int len)
 	n = 0;
 	while ((i + n) < len)
 	{
-		while (s1[i] != '\0')
+		while (s1[i])
 		{
 			join_s[i] = s1[i];
 			i++;
 		}
-		while (s2[n] != '\0')
+		while (s2[n])
 		{
 			join_s[i + n] = s2[n];
 			n++;

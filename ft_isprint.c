@@ -6,14 +6,11 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 16:46:48 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/05 19:51:04 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 12:42:55 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isprint(int c)
 {
-	if ((c < 32) || (c > 126))
-		return (0);
-	else
-		return (1);
+	return ((c >= 32) && (c <= 126));
 }

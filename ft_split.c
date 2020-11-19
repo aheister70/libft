@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 20:01:17 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/18 10:05:50 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 13:16:11 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int		ft_amount_sub_s(char const *s, char c)
 
 	i = 0;
 	sub_s = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		if (i == 0 && s[i] != c)
 			sub_s++;
@@ -57,10 +57,10 @@ static char		**ft_fill_s(char const *s, char **array, char c, int amount_sub)
 
 	i = 0;
 	n = 0;
-	while (n < amount_sub && s[i] != '\0')
+	while (n < amount_sub && s[i])
 	{
 		len = 0;
-		while (s[i] != c && s[i] != '\0')
+		while (s[i] != c && s[i])
 		{
 			len++;
 			i++;
@@ -68,6 +68,8 @@ static char		**ft_fill_s(char const *s, char **array, char c, int amount_sub)
 		if ((s[i] == c || s[i] == '\0') && len > 0)
 		{
 			array[n] = ft_fill_sub(s, i, len);
+			if (array[n] == 0)
+				return (0);
 			n++;
 		}
 		i++;
