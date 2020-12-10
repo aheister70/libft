@@ -1,18 +1,18 @@
 # libft functions
 
-ft_atoi 
+ft_atoi
 The atoi() function converts the initial portion of the string pointed to by str to int representation.
 
-ft_bzero 
+ft_bzero
 The bzero() function writes n zeroed bytes to the string s.If n is zero, bzero() does nothing.
 
-ft_calloc 
+ft_calloc
 The calloc() function contiguously allocates enough space for count objects that are size bytes of memory each and returns a pointer to the allocated memory.The allocated memory is filled with bytes of value zero.
 
-ft_isalnum 
+ft_isalnum
 The isalnum() function tests for any character for which isalpha(3) or isdigit(3) is true.The value of the argument must be representable as an unsigned char or the value of EOF.
 
-ft_isalpha 
+ft_isalpha
 The isalpha() function tests for any character for which isupper(3) or islower(3) is true.The value of the argument must be representable as an unsigned char or the value of EOF.
 
 ft_isascii 
