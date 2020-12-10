@@ -6,7 +6,7 @@
 /*   By: aheister <aheister@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 20:01:17 by aheister      #+#    #+#                 */
-/*   Updated: 2020/11/19 13:16:11 by aheister      ########   odam.nl         */
+/*   Updated: 2020/11/19 17:13:06 by aheister      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ char			**ft_split(char const *s, char c)
 	char	**array;
 	int		amount_sub;
 
-	if (!s || !c)
+	if (!s)
 		return (0);
 	amount_sub = ft_amount_sub_s(s, c);
 	array = (char **)malloc((amount_sub + 1) * sizeof(char*));
